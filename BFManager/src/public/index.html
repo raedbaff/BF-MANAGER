@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BF Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+      integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="BF_Form" id="form">
+        <input
+          class="input"
+          type="text"
+          id="nouvellePartie"
+          placeholder="Nouvelle partie..."
+        />
+        <button class="button">Ajouter</button>
+      </form>
+      <div class="parties">
+        <div class="lesParties">Les Parties</div>
+        
+
+        <div class="partiesDisplay" id="parties">
+        </div>
+        
+      </div>
+      <div class="PartiesIncompletElement">
+        <div class="PartiesIncomplet" id="PartiesIncomplet"></div>
+        <strong>matches en cours ...</strong>
+      </div>
+    </div>
+    <div class="seperator"></div>
+    <div class="container">
+      <div class="lesParties">Tchat</div>
+
+      
+      <form id="chatForm" class="chat-form">
+          <input type="text" id="sender" placeholder="Who are you">
+          <input type="text" id="messageInput" placeholder="Enter your message...">
+          <button type="submit">Send</button>
+      </form>
+
+      <div id="messages" class="messages-container">
+      </div>
+  </div>
+
+    <script src="script.js" ></script>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.BF_Form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+.seperator {
+  margin-top: 20px;
+}
+
+.button {
+  background-color: rgb(61, 61, 198);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #444;
+}
+
+.parties {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lesParties {
+  background-color: rgb(61, 61, 198);
+  color: white;
+  padding: 10px 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.PartiesIncompletElement {
+  margin-top: 10%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.PartiesIncomplet {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgb(61, 61, 198);
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.partiesDisplay {
+  margin-top: 20px;
+}
+
+.partiesDisplay .partyItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.partiesDisplay .partyItem input[type="checkbox"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.partiesDisplay .partyItem input[type="checkbox"]:checked ~ label {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.partiesDisplay .partyItem label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.partiesDisplay .partyItem .finished {
+  font-weight: bold;
+  color: green;
+}
+.partiesDisplay .partyItem .unfinished {
+  font-weight: bold;
+  color: red;
+}
+.delete-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px; 
+  height: 24px; 
+  background-color: transparent;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.chat-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.chat-form input[type="text"],
+.chat-form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.chat-form button {
+  background-color: rgb(61, 61, 198);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-form button:hover {
+  background-color: #444;
+}
+
+.messages-container {
+  max-height: 300px; 
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.message-element {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.message-sender {
+  font-weight: bold;
+}
+
+.message-text {
+  margin-left: 5px;
+}
